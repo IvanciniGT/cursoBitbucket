@@ -239,3 +239,22 @@ Quien quiero que toque el repo del proyecto?
     Si quiero que los integrantes del equipo hagan cambios... pero ni de coña les voy a dejar controlar el repo
     
     
+    
+    
+    GIT CHECKOUT me pone en el working dir (en mi carpeta) los ficheros que quiera YO (por defecto todos) tal y
+        como estaban en un determinado commit (por defecto el último)
+    
+    git checkout COMMIT_ID ficheros
+    git checkout RAMA ficheros  => Ultimo commit de la RAMA
+    
+    CHECKOUT TRABAJA SOBRE el WORKING DIR
+    
+    git revert CAMBIA MI REPO y mi working dir
+    
+    Fichero1.txt    > Fichero1.txt   > REVERT > Fichero1.txt
+    Linea1              Linea1                      Linea1
+                        Linea2
+    C1                      C2                      C3
+    
+                                        RESET > Eliminar el C2 del repo... opcionalmente se modificará el working dir (Reset HARD) <<< PELIGROSO
+                                                                                                                                Puedo perder datos
